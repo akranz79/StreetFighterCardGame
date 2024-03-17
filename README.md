@@ -1,44 +1,22 @@
-![valorant banner](./assets/images/valorant%20banner2.png "Valorant Banner")
+![Street Fighter banner](./assets/images/sfbanner2.jpg "Street Fighter Banner")
 
-<h1>VALORANT THE CARD GAME</h1>
+<h2> Street Fighter Game Card</h2>
 
-<h2>Table of content</h2>
 
-- [About the project](#about-the-project)
-- [Layout](#layout)
-- [Tech stack](#tech-stack)
-- [Running the project](#running-the-project)
-- [License](#license)
+## Sobre o Projeto
 
-## About the project
+O projeto tem como objetivo criar um jogo baseado no clássico jogo de cartas [Super trunfos](https://en.wikipedia.org/wiki/Top_Trumps), onde os jogadores usam cartas temáticas ilustradas e comparam seus atributos para descobrir quem venceria em cada critério, aqui neste caso o tema utilizado é o do popular jogo [Street Fighter](https://www.streetfighter.com/6/pt-br), onde as cartas são baseadas em seus respectivos personagens.
 
-You can also read a version of this readme in portuguese [here](https://github.com/jefersonsilva01/Valorant-The-Card-Game/blob/main/README-pt_BR.md).
 
-The project aims to create a game based on the classic [top trumps](https://en.wikipedia.org/wiki/Top_Trumps) card game, where players use illustrated thematic cards and compare their attributes to find out who would win in each criterion, here in this case the theme used is that of the popular online game [Valorant](https://playvalorant.com/en-us/), where the cards are based on their respective characters.
 
-You can see the game demo by clicking [here](https://jefersonsilva01.github.io/Valorant-The-Card-Game/).
 
-## Layout
+---
+<br />
 
-The project design was made using [Figma](https://www.figma.com/) and its steps in the creative process are documented and can be accessed by clicking [here](https://www.figma.com/file/Axh7rQRFZNxosyKM2EiIa1/VALORANT---THE-CARD-GAME?type=design&node-id=2-4&mode=design).
+<a href="https://github.com/akranz79/"><img src="https://github.com/akranz79/akranz79/blob/main/img/img2.png" width="100px;" alt="" /> </a>
+ 
+[![Linkedin Badge](https://img.shields.io/badge/-Alexandre-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/akranz/)](https://www.linkedin.com/in/akranz/)
+[![Gmail Badge](https://img.shields.io/badge/-ahkranz79@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ahkranz79@gmail.com)](mailto:ahkranz79@gmail.com)
 
-## Tech stack
+⚙ O desenvolvimento de software é uma arte em constante evolução - nunca se contente com o suficiente. ⚙
 
-The following technologies were used for this project:
-
-[![My Skills](https://skillicons.dev/icons?i=vscode,html,css,js,git,github,figma,jasmine)](https://skillicons.dev)
-
-## Running the project
-
-Clone or download this repository and open the index.html file with your preferred browser.
-
-```bash
-git clone https://github.com/<user>/Valorant-The-Card-Game.git
-cd Valorant\ The\ Card\ Game/
-code .
-```
-
-## License
-
-This project is under the MIT license. See the file [LICENSE](https://github.com/jefersonsilva01/Valorant-The-Card-Game/blob/main/LICENSE) for more details.
-# StreetFighterCardGame
