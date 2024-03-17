@@ -5,8 +5,17 @@
 
 ## Sobre o Projeto
 
-O projeto tem como objetivo criar um jogo baseado no clássico jogo de cartas [Super trunfos](https://en.wikipedia.org/wiki/Top_Trumps), onde os jogadores usam cartas temáticas ilustradas e comparam seus atributos para descobrir quem venceria em cada critério, aqui neste caso o tema utilizado é o do popular jogo [Street Fighter](https://www.streetfighter.com/6/pt-br), onde as cartas são baseadas em seus respectivos personagens.
+O projeto tem como objetivo criar um jogo baseado no clássico jogo de cartas [Super Trunfo](https://en.wikipedia.org/wiki/Top_Trumps), onde os jogadores usam cartas temáticas ilustradas e comparam seus atributos para descobrir quem venceria em cada critério, aqui neste caso o tema utilizado é o do popular jogo [Street Fighter](https://www.streetfighter.com/6/pt-br), onde as cartas são baseadas em seus respectivos personagens.
 
+## Demonstração
+
+
+
+Para ver um video demonstração do game, [clique aqui](https://youtu.be/TH6AgAiO1wE)
+
+![Tela inicial](./assets/images/Screenshot_1.jpg "Street Fighter tela inicial")
+
+![Tela do Jogo](./assets/images/Screenshot_2.jpg "Street Fighter tela do jogo")
 
 
 
