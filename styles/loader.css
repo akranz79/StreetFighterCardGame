@@ -1,0 +1,49 @@
+#container span,
+#percent {
+  font-family: JetBrainsMono-Bold;
+  font-size: 16px;
+}
+#bar,
+#percent {
+  box-shadow: 0 0 1px 1px var(--main-red);
+  height: 28px;
+  margin-top: 16px;
+}
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#container span {
+  text-transform: uppercase;
+}
+#container span:first-child {
+  color: var(--main-black);
+  background-color: var(--main-red);
+  padding: 4px 16px;
+}
+#container :nth-child(2) {
+  color: var(--main-red);
+  margin-left: 16px;
+}
+#progress-bar {
+  display: flex;
+}
+#bar {
+  border-color: 1px solid var(--main-red);
+  width: 825px;
+  padding: 4px 8px;
+}
+#loader {
+  background-color: var(--main-red);
+  width: 1%;
+  height: 100%;
+}
+#percent {
+  color: var(--main-red);
+  text-align: center;
+  border-color: 2px solid var(--main-red);
+  width: 65px;
+  padding: 4px 16px;
+}

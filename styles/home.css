@@ -1,0 +1,280 @@
+#menu a,
+#play-now {
+  font-family: JetBrainsMono-Bold;
+  cursor: pointer;
+}
+#characters,
+#menu,
+#menu a,
+#menu ul,
+#modal-area,
+#titles {
+  display: flex;
+}
+#bg,
+.char-1,
+.char-2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#bg,
+#modal {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#leaderItem,
+#menu a,
+#titles h2 {
+  color: var(--main-red);
+}
+#leaderItem:hover,
+#menu .detail,
+#modal-header {
+  background-color: var(--main-red);
+}
+#bg,
+#home,
+#modal,
+footer {
+  width: 100%;
+}
+#characters,
+#home,
+#modal-area,
+footer {
+  position: relative;
+}
+#github,
+#play-now,
+#spotify {
+  text-align: center;
+  text-decoration: none;
+}
+#github,
+#menu a,
+#play-now,
+#spotify {
+  text-decoration: none;
+}
+#bg {
+  background-image: url("../assets/images/BG\ valorant.gif");
+  filter: brightness(0.5) blur(2px);
+  max-width: 1440px;
+}
+#home {
+  height: 100vh;
+  overflow-y: hidden;
+}
+#menu {
+  padding: 16px 0;
+  height: 70px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--main-black);
+  background-color: rgba(33, 38, 45, 0.3);
+}
+#menu ul {
+  list-style: none;
+  justify-content: end;
+  margin-right: 141px;
+}
+#menu li {
+  margin-right: 24px;
+}
+#menu a {
+  align-items: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+#menu span {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, width 0.5s ease-in-out;
+}
+#menu a:hover > span {
+  width: 100%;
+  opacity: 1;
+  text-shadow: 2px 2px var(--main-black);
+}
+#menu img {
+  margin-right: 8px;
+  height: 32px;
+  width: 32px;
+}
+#menu .detail {
+  height: 5px;
+  width: 30px;
+}
+#play-now {
+  color: var(--white) !important;
+  margin-left: 141px;
+}
+#play-now:hover {
+  transition: 0.2s ease-in;
+  color: var(--main-red) !important;
+  text-shadow: 2px 2px var(--main-black) !important;
+}
+#titles {
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+}
+#titles h1 {
+  height: fit-content;
+  margin-right: 18px;
+  padding-top: 28px;
+  font-family: Oswald;
+  font-weight: 700;
+  color: var(--white);
+  font-size: 112px;
+}
+#titles h2 {
+  font-family: JetBrainsMono-ExtraBold;
+  font-size: 36px;
+  font-weight: 400;
+  z-index: 1;
+  width: 100px;
+}
+#characters {
+  align-items: flex-end;
+  justify-content: center;
+  height: 55%;
+}
+.char-1,
+.char-2 {
+  bottom: 0;
+  scale: 1.2;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.char-1.loaded,
+.char-2.loaded {
+  opacity: 1;
+}
+#modal {
+  display: block;
+  visibility: hidden;
+  z-index: 1;
+  background-color: var(--main-black-blur);
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s linear;
+}
+#modal-area {
+  border: 3px solid var(--main-red);
+  height: 472px;
+  width: fit-content;
+  padding: 16px;
+  flex-direction: column;
+  top: -100%;
+  margin: 0 auto;
+  box-shadow: 10px 10px var(--main-black);
+  transition: top 0.5s ease-in-out;
+}
+#leaderItem,
+#modal-header {
+  display: flex;
+  align-items: center;
+}
+#modal-header {
+  width: 699px;
+  height: 48px;
+  justify-content: space-between;
+}
+#modal-header h3 {
+  font-family: Oswald;
+  font-size: 24px;
+  margin-left: 16px;
+}
+#github,
+#leaderItem span,
+#spotify {
+  font-family: JetBrainsMono-Bold;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+#modal-header span {
+  background-color: unset;
+  margin-right: 16px;
+  cursor: pointer;
+}
+#modal-header img {
+  width: 16px;
+  height: 16px;
+}
+#modal-content {
+  border: 2px solid var(--main-red);
+  width: 699px;
+  height: 376px;
+  margin-top: 16px;
+  overflow-y: auto;
+  color: var(--white);
+  font-family: JetBrainsMono-Bold;
+  padding: 16px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--main-black-blur);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-red);
+}
+#leaderItem {
+  margin: 16px 8px;
+  width: 642px;
+  height: 60px;
+  border: 1px solid var(--main-red);
+  justify-content: space-between;
+}
+footer,
+footer div {
+  display: flex;
+  align-items: center;
+}
+#leaderItem span {
+  padding: 0 16px;
+}
+#leaderItem:hover {
+  border: 3.2px solid var(--white);
+  color: var(--main-black);
+}
+footer {
+  border-top: 1px solid var(--white);
+  height: 100px;
+  background-color: var(--main-black) !important;
+  bottom: 0;
+  justify-content: space-between;
+}
+#github,
+#spotify {
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 4px;
+}
+#github {
+  float: right;
+  margin-right: 144px;
+  justify-self: end;
+}
+#spotify {
+  margin-left: 24px;
+  justify-self: flex-start;
+}
+#github img,
+#spotify img {
+  margin-left: 16px;
+  height: 24px;
+  width: 24px;
+}
+#riotgames {
+  margin-left: 144px;
+}
+#riotgames img {
+  height: 24px;
+  width: 80px;
+}

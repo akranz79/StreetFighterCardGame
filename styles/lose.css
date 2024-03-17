@@ -1,0 +1,67 @@
+#icon-warning,
+#message-header {
+  background-color: var(--main-red);
+}
+#lose a:hover,
+#message-area h3 {
+  color: var(--main-red);
+}
+#lose {
+  background-color: var(--main-black);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#message {
+  display: flex;
+}
+#icon-warning {
+  height: 177px;
+  width: 176px;
+  align-items: center;
+  text-align: center;
+  padding-top: 41px;
+  margin-right: 8px;
+}
+#message-area {
+  border: 1.2px solid var(--main-red);
+  width: 488px;
+  height: 136px;
+}
+#message-header {
+  width: 474px;
+  height: 32px;
+  margin: 8px;
+}
+#message-header h4 {
+  color: var(--main-black);
+  text-align: center;
+  font-size: 24px;
+  font-family: JetBrainsMono-Bold;
+}
+#message-area h3 {
+  text-align: center;
+  font-size: 36px;
+  font-family: JetBrainsMono-ExtraBold;
+  margin-top: 16px;
+}
+#message-body {
+  border-top: 1.2px solid var(--main-red);
+  margin-top: 8px;
+}
+#lose a {
+  font-family: JetBrainsMono-Bold;
+  font-size: 24px;
+  color: var(--white);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 32px;
+  cursor: pointer;
+}
+#lose-options {
+  float: right;
+}
+#lose-options a:first-child {
+  margin-right: 16px;
+}

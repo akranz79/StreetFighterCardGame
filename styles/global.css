@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --main-red: #8f71f1;
+  --main-black: #1b1b20;
+  --main-black-blur: rgba(33, 38, 45, 0.9);
+}
+
+@font-face {
+  font-family: JetBrainsMono-Bold;
+  src: url("../assets/fonts/JetBrainsMono-Bold.ttf");
+}
+
+@font-face {
+  font-family: JetBrainsMono-ExtraBold;
+  src: url("../assets/fonts/JetBrainsMono-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url("../assets/fonts/Oswald-Regular.ttf");
+}
+
+body {
+  background-color: var(--main-black);
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  flex-direction: column;
+  height: 100vh;
+}
