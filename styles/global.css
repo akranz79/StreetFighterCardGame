@@ -5,10 +5,10 @@
 }
 
 :root {
-  --white: #fff;
-  --main-red: #8f71f1;
-  --main-black: #1b1b20;
-  --main-black-blur: rgba(33, 38, 45, 0.9);
+  --white: #f0f4f5;
+  --main-red: #D21904;
+  --main-black: #070000;
+  --main-black-blur: #070000;
 }
 
 @font-face {

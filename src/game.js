@@ -17,7 +17,7 @@ function game() {
   k = document.getElementById("cpu-turn"), 
   v = ["RYU_HADOUKEN_THEME_0", "CHUNLI_THEME_SF6", "KEN_THEME_SF6", "MENU_THEME_SF6", "CAMMY_THEME_SF5", "RYU_HADOUKEN_PRAIA", 
        "LOBBY_THEME_SF6", "RASHID_THEME_SF5", "ZANGIEF_THEME_SF4", "SAGAT_THEME_SF4", "EVIL_RYU_THEME_SF4", "DHALSIM_THEME_SF5","GUILE_THEME_NM"  ], 
-  g = document.querySelector("#game"), T = ["BG", "BG4"], 
+  g = document.querySelector("#game"), T = ["BG", "BG2", "BG3", "BG4", "BG5", "BG6"], 
   h = T[Math.floor(Math.random() * T.length)]; let C, E, I, L = 0; 
   
   const P = new CardGame(characters); 
@@ -26,7 +26,41 @@ function game() {
   
   function $() { const e = document.querySelector(".card-flip-player"), l = (e, l, t) => e.style.setProperty(l, t), t = t => { let s = e.offsetWidth, n = t.pageX - e.offsetLeft, a = 5 * (.5 - (t.pageY - e.offsetTop) / s); l(e, "--dy", `${7 * -(.5 - n / s)}deg`), l(e, "--dx", `${a}deg`) }; e.addEventListener("mousemove", t, !1), e.addEventListener("mouseenter", t, !1), e.addEventListener("mouseleave", (() => { e.style.setProperty("--dy", "0"), e.style.setProperty("--dx", "0") }), !1) } 
   
-  function S(e, l) { const t = e[0], s = document.createElement("div"); s.classList.add(`card-flip-${l}-fliped`, `card-flip-${l}`); const a = document.createElement("div"); let r, i; a.classList.add("card-inner"), "player" === l && (s.onclick = () => s.classList.remove("card-flip-player-fliped")), r = `\n      <div id="${t.id}" class="card-${l}" style="background-image: url(${t.cover});">      \n        <img class="card-avatar-${l}" src="${t.avatar}" alt="${t.name}" />\n        <img class="info-${l}" src="./assets/images/info.svg">\n        <div class="card-info">\n          <span class="name">${t.name}</span>\n          <img class="class" src='${t.class}'>\n          <ul class="list-cards">\n            <li class="skill-${l}">\n              <span>ATTACK</span>\n              <span>${t.skills.attack}</span>\n            </li>\n            <li class="skill-${l}">\n              <span>DEFENSE</span>\n              <span>${t.skills.defense}</span>\n            </li>\n            <li class="skill-${l}">\n              <span>AGILITY</span>\n              <span>${t.skills.agility}</span>\n            </li>\n            <li class="skill-${l}">\n              <span>TECH</span>\n              <span>${t.skills.tech}</span>\n            </li>\n          </ul>\n        </div>\n      </div>\n      `, i = '\n      <div \n        class="card-back" \n        style="background-image: url(\'./assets/images/BG card back 3.png\');">\n      </div>\n      ', a.innerHTML += '\n      <div \n        class="card-back" \n        style="background-image: url(\'./assets/images/BG card back 3.png\');">\n      </div>\n      ', a.innerHTML += r, s.appendChild(a), n.appendChild(s) } 
+  function S(e, l) { 
+    const t = e[0], s = document.createElement("div"); s.classList.add(`card-flip-${l}-fliped`, `card-flip-${l}`); 
+    const a = document.createElement("div"); let r, i; a.classList.add("card-inner"), "player" === l && (s.onclick = () => s.classList.remove("card-flip-player-fliped")), 
+    r = `\n      <div id="${t.id}" class="card-${l}" style="background-image: url(${t.cover});">      
+         \n        <img class="card-avatar-${l}" src="${t.avatar}" alt="${t.name}" />
+         \n      <img class="info-${l}" src="./assets/images/info.svg">
+         \n        <div class="card-info">\n          <span class="name"><h2>${t.name}</h2></span>
+         \n          <img class="class" src='${t.class}'>
+         \n          <ul class="list-cards">
+         \n            <li class="skill-${l}">
+         \n              <span>RANGE</span>
+         \n              <span>${t.skills.range}</span>
+         \n            </li>
+         \n            <li class="skill-${l}">
+         \n              <span>HEALTH</span>
+         \n              <span>${t.skills.health}</span>
+         \n            </li>
+         \n            <li class="skill-${l}">
+         \n              <span>POWER</span>
+         \n              <span>${t.skills.power}</span>
+         \n            </li>
+         \n            <li class="skill-${l}">
+         \n              <span>MOBILITY</span>
+         \n              <span>${t.skills.mobility}</span>
+         \n            </li>
+         \n            </li>
+         \n            <li class="skill-${l}">
+         \n              <span>TECH</span>
+         \n              <span>${t.skills.tech}</span>
+         \n            </li>
+         \n          </ul>
+         \n        </div>
+         \n      </div>
+         \n      `, 
+         i = '\n      <div \n        class="card-back" \n        style="background-image: url(\'./assets/images/BG card back 3.png\');">\n      </div>\n      ', a.innerHTML += '\n      <div \n        class="card-back" \n        style="background-image: url(\'./assets/images/BG card back 3.png\');">\n      </div>\n      ', a.innerHTML += r, s.appendChild(a), n.appendChild(s) } 
   
   function B(e) { "player" === e ? document.querySelectorAll(`.skill-${e}`).forEach((e => { e.onclick = () => { m.innerText = e.children[1].innerText, P.skillsPlayer.name = e.children[0].innerText, P.skillsPlayer.skill = parseInt(e.children[1].innerText) } })) : "cpu" === e && document.querySelectorAll(`.skill-${e}`).forEach((e => { e.children[0].innerText === P.skillsPlayer.name && (P.skillsCPU.name = e.children[0].innerText, P.skillsCPU.skill = parseInt(e.children[1].innerText)) })) } 
   

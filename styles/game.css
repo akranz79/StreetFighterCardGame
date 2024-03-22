@@ -299,7 +299,7 @@
 .card-info .name,
 .skill-cpu span,
 .skill-player span {
-  font-family: Valorant !important;
+  font-family: Oswald !important;
   color: var(--white) !important;
   border: none !important;
 }
